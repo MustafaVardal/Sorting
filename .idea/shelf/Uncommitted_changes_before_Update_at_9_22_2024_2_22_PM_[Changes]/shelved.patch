@@ -1,0 +1,43 @@
+Index: queue/PriorityQueue/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/queue/PriorityQueue/Main.java b/queue/PriorityQueue/Main.java
+new file mode 100644
+--- /dev/null	(date 1726761536255)
++++ b/queue/PriorityQueue/Main.java	(date 1726761536255)
+@@ -0,0 +1,33 @@
++package com.dataStructure.Sorting.queue.PriorityQueue;
++
++import java.util.*;
++import java.util.PriorityQueue;
++
++public class Main {
++    public static void main(String[] args) {
++        Queue<Double> queue = new PriorityQueue<>(Collections.reverseOrder());
++
++        queue.offer(3.0);
++        queue.offer(2.5);
++        queue.offer(4.0);
++        queue.offer(1.5);
++        queue.offer(2.0);
++
++        while (!queue.isEmpty()){
++            System.out.println(queue.poll());
++        }
++
++
++        Queue<String> queues = new PriorityQueue<>(Collections.reverseOrder());
++
++        queues.offer("B");
++        queues.offer("C");
++        queues.offer("A");
++        queues.offer("F");
++        queues.offer("D");
++
++        while (!queues.isEmpty()){
++            System.out.println(queues.poll());
++        }
++    }
++}
